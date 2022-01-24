@@ -1,0 +1,69 @@
+.fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.label {
+  border-radius: 0.7rem;
+  outline: none;
+  border: 2px solid #ccc;
+  transition: 0.15s ease-in-out border-color;
+  padding: 0.7rem;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.87);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.label[selected-option='true'] {
+  border-color: #09f;
+}
+
+.dataContainer {
+  display: flex;
+  align-items: center;
+}
+
+.buttonsContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .buttonsContainer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 1.4rem;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(18px);
+  }
+}
+
+.checkbox {
+  display: none;
+}
+
+.iconContainer {
+  padding: 0.2rem;
+  border-radius: 100rem;
+  background-color: #ccc;
+  transition: 0.15s ease-in-out background-color;
+  display: flex;
+}
+
+.label[selected-option='true'] .iconContainer {
+  background-color: #09f;
+}
+
+.icon {
+  stroke: #fff;
+  transform: scale(0.8);
+  stroke-width: 3px;
+}

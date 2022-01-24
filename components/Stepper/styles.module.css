@@ -1,0 +1,84 @@
+.container {
+  height: 100%;
+  padding: 1rem;
+}
+
+.stepWrapper {
+  max-width: 900px;
+  margin: 2rem auto;
+  display: grid;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .stepWrapper {
+    width: 100%;
+  }
+}
+
+.stepTitle {
+  color: rgba(0, 0, 0, 0.55);
+  margin: 0;
+}
+
+.titleInformation {
+  color: rgba(0, 0, 0, 0.83);
+}
+
+.followPathContainer {
+  width: 100%;
+}
+
+.followPath {
+  position: relative;
+}
+
+.path {
+  background-color: #ccc;
+  height: 0.5rem;
+  width: 100%;
+  position: relative;
+  border-radius: 0.3rem;
+}
+
+.colorPath {
+  border-radius: 0.3rem;
+  background-color: #09f;
+  position: absolute;
+  height: 100%;
+  transition: 0.3s ease-in-out width;
+}
+
+.stepsContainer {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  bottom: 0;
+  transform: translateY(35%);
+}
+
+.step {
+  width: 2rem;
+  aspect-ratio: 1 / 1;
+  background-color: #ccc;
+  border-radius: 100rem;
+  border: 4px solid #fff;
+  transition: 0.3s ease background-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #222;
+  font-weight: bold;
+}
+
+.step[active='true'] {
+  background-color: #09f;
+  color: #fff;
+}
+
+.stepNumber {
+  color: inherit;
+  font-weight: bold;
+  font-size: 0.9rem;
+}

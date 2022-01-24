@@ -1,0 +1,13 @@
+.buttonsContainer {
+  position: sticky;
+  width: 100%;
+  left: 0;
+  display: flex;
+  bottom: 0;
+  padding: 1rem;
+  justify-content: space-between;
+  backdrop-filter: blur(18px);
+  gap: 1rem;
+  background-color: rgba(244, 244, 244, 0.94);
+  height: max-content;
+}

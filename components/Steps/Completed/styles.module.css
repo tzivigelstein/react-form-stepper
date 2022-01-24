@@ -1,0 +1,57 @@
+.nearPlacesContainer {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.nearPlace {
+  width: 50%;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  gap: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.15s ease-in-out transform;
+}
+
+@media (max-width: 768px) {
+  .nearPlace {
+    width: 100%;
+  }
+}
+
+.nearPlace:hover {
+  transform: scale(1.01);
+}
+
+.nameAndDescriptionContainer {
+  display: grid;
+}
+
+.nearPlaceName {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.nearPlaceDescription {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.63);
+}
+
+.detailsContainer {
+  display: grid;
+  place-items: center;
+}
+
+.nearPlaceTime {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.nearPlaceDistance {
+  color: rgba(255, 255, 255, 0.63);
+  font-size: 0.9rem;
+}

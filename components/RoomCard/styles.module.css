@@ -1,0 +1,75 @@
+.roomContainer {
+  border-radius: 0.7rem;
+  outline: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: 0.15s ease-out transform;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  gap: 0.7rem;
+}
+
+.roomContainer:hover {
+  transform: scale(1.015);
+}
+
+.roomImageContainer {
+  aspect-ratio: 0.95 / 1;
+  overflow: hidden;
+  border-radius: 0.3rem;
+}
+
+.roomImage {
+  width: 100%;
+  object-fit: cover;
+}
+
+.dataWrapper {
+  display: grid;
+  width: 100%;
+  gap: 0.3rem;
+}
+
+.dataContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.roomTitle {
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.roomPrice {
+  text-align: left;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.67);
+}
+
+.roomPriceAccent {
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.iconContainer {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: #09f;
+  padding: 0.2rem;
+  border-radius: 100rem;
+}
+
+.icon {
+  stroke: #fff;
+  transform: scale(0.8);
+  stroke-width: 2px;
+}

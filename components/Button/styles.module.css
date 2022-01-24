@@ -1,0 +1,39 @@
+.button {
+  border: none;
+  outline: none;
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 4px 15px -3px rgb(63 67 62 / 24%),
+    0 4px 6px -4px rgb(63 67 62 / 24%);
+  cursor: pointer;
+  transition: 0.15s ease-in-out filter, 0.15s ease-in-out transform;
+}
+
+.primaryButton {
+  background-color: #09f;
+  color: #fff;
+  box-shadow: 0 4px 15px -3px #09f, 0 4px 6px -4px #09f;
+}
+
+.secondaryButton {
+  color: #000;
+  background-color: #fff;
+}
+
+@media (hover) {
+  .button:hover {
+    filter: brightness(90%);
+  }
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  filter: grayscale(1);
+}
