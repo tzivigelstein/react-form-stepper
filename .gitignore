@@ -1,0 +1,8 @@
+# Editor
+.vscode
+
+# Builds
+.next
+
+# Packages
+node_modules
